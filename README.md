@@ -21,6 +21,9 @@ The dataset should be organised as follows, taking ISIC-2018 as an example:
 
 Each `images` folder contains the original images (e.g., `ISIC_0000000.jpg`), and each `masks` folder contains the corresponding ground truth masks with the same filename.
 
+## environment 
+conda env create -n your_env_name -f environment.yml
+
 ## Training
 
 Download the SAM-Med2D model and move the model to the `your_root/weights/sammed2d` directory in your project.
