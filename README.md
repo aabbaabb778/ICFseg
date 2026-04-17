@@ -11,31 +11,15 @@
 ## Data Preparation
 
 The dataset should be organised as follows, taking ISIC-2018 as an example:
-ISIC-2018
-├── train
-│ ├── images
-│ │ ├── ISIC_0000000.jpg
-│ │ ├── ISIC_0000001.jpg
-│ │ ├── ISIC_0000002.jpg
-│ │ └── ...
-│ └── masks
-│ ├── ISIC_0000000.jpg
-│ ├── ISIC_0000001.jpg
-│ ├── ISIC_0000002.jpg
-│ └── ...
-├── val
-│ ├── images
-│ │ ├── ISIC_0000100.jpg
-│ │ ├── ISIC_0000101.jpg
-│ │ ├── ISIC_0000102.jpg
-│ │ └── ...
-│ └── masks
-│ ├── ISIC_0000100.jpg
-│ ├── ISIC_0000101.jpg
-│ ├── ISIC_0000102.jpg
-│ └── ...
-├── train.txt
-└── val.txt
+
+- `ISIC-2018/train/images/`
+- `ISIC-2018/train/masks/`
+- `ISIC-2018/val/images/`
+- `ISIC-2018/val/masks/`
+- `ISIC-2018/train.txt`
+- `ISIC-2018/val.txt`
+
+Each `images` folder contains the original images (e.g., `ISIC_0000000.jpg`), and each `masks` folder contains the corresponding ground truth masks with the same filename.
 
 ## Training
 
